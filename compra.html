@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		 <meta charset="UTF-8">
+	  
+	    <link rel="stylesheet" href="estwebconsolas.css" type="text/css">
+	</head>
+	<body>
+	<form action="mailto:direcciondelcorreo@correo.com" method="post" enctype="text/plain">
+
+       <label for="nombre">Nombre:</label>
+       <input type="text" name="nombre"> 
+	       <br>
+	       <br>
+		<label for="direccion">Direccion de Facturación:</label>
+		<input type="text" name="direccion">
+     		<br>
+     		<br>
+     	<label for="fechaenvio">¿Cuándo desea la entrega?:</label>
+		<input type="date" name="fechaenvio">
+			<br>
+			<br>
+
+		<label for="envio">Modos de envío</label><br>
+		<input list="envio">
+	    <datalist id="envio">
+        	<option value="Ordinario">
+        	<option value="Urgente (72h)">
+        	<option value="Urgente Plus (24h)">
+        	<option value="A recoger en tienda">
+    	</datalist>
+    	<br>
+    	<br>
+
+        <label for="consola">Elija la consola:</label>     
+        <select name="consola">
+        	<optgroup label="Nintendo">
+	        	<option>Nes</option>
+	        	<option>GameBoy</option>
+	        	<option>Nintendo 64</option>
+	        	<option>Wii</option>
+	        	<option selected>Switch</option>
+			</optgroup>
+			<br>
+			<optgroup label="PlayStation">
+				<option>PS1</option>
+				<option>PS2</option>
+				<option>PS3</option>
+				<option>PS4</option>
+				<option>PS5</option>
+			</optgroup>
+			<br>
+			<optgroup label="Xbox">
+				<option>Xbox</option>
+				<option>Xbox 360</option>
+				<option>Xbox One</option>
+				<option>Xbox X-series</option>
+			</optgroup>
+        </select>
+       <br> 
+       <br> 
+        <label for="color">Color:  </label>
+ 
+        <input type="radio" name="color" value="blanco">Blanco
+        
+        <input type="radio" name="color" value="negro" checked>Negro<br>
+        
+        <br> 
+        <br>  
+            
+        <label for="complementos">Dispositivos electr&oacute;nicos que usa</label><br>
+        <input type="checkbox" name="complementos" value="alimentacion">Cable de alimentaci&oacute;n<br>
+        <input type="checkbox" name="complementos" value="protector">Cristal protector<br>
+        <input type="checkbox" name="complementos" value="seguro">Garant&iacute;a ampliada
+       
+	<p>
+        <input type="submit" value="Realizar Pedido" />
+        </p>
+        <p>
+        <input type="reset" value="Borrar">
+        </p>
+	<br> 
+        <br> 
+	</body>
+</html>

@@ -1,0 +1,60 @@
+#cabecera{
+	column-width: 25%;
+}
+#cabecera img{
+	width: 150px;
+}
+
+#titulo{
+	background-color: #FFA600;
+	color: #0023FF;
+	font-family: verdana;
+}
+
+#menu h3{
+	text-align: center;
+	color: #0023FF;
+}
+#menu a{
+	font-family: verdana;
+	color: #175A1C;
+	text-decoration: inherit;
+}
+#menu a:visited{
+	color: #FF0000;
+}
+
+#contenido{
+	font-family: verdana;
+	text-align: center;
+	color: #FFFFFF;
+	background-image: url(fotos/contenido.jpg) ;
+	background-size: cover;
+}
+
+#pie{
+	text-align: center;
+	font-family: verdana;
+	background-color: #05A459;
+}
+
+table{
+	margin: auto;
+}
+table img{
+	width: 300px;
+	height: 200px;
+}
+
+h1.ventana:hover::after{
+	content: attr(data-descr);
+	color: red;
+	position: absolute;
+	background-color: white;
+	border: black;
+}
+
+table h1:first-child{
+	text-align: center;
+}
+
